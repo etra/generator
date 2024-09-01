@@ -6,7 +6,6 @@ import logging
 import sys
 import os
 
-
 class App:
     config: Config = None
     log: logging = None
@@ -23,7 +22,7 @@ class App:
 
     def run(self, **kwargs):
         # scenario = get_scenario('custom', self, {'name': 'custom_scenerio'})
-        scenario = get_scenario('early_expansion', self, {'name': 'custom_scenerio'})
+        scenario = get_scenario('static', self)
         scenario.run_scenario()
         # scenario = ScenarioOne(self.app)
         #

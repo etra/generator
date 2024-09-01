@@ -27,5 +27,8 @@ def get_scenario(scenario: str, app: "ventilator.app.App", scenario_params: Scen
     if scenario == "early_expansion":
         from aligator.scenarios.early_expansion import Scenario
         return Scenario(app, None)
+    if scenario == "static":
+        from aligator.scenarios.static.scenerio import Scenario
+        return Scenario(app, scenario_params)
     else:
         raise Exception("Scenerio not implemented")
