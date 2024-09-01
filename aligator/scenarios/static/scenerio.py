@@ -70,6 +70,10 @@ class Scenario(ScenarioInterface):
                 self.app.db.add(visit)
 
             self.app.db.commit()
+            #todo: add user creted
+            #toto: add order created (for this to work - we need to have products in place)
+            #
+
 
         pass
 
