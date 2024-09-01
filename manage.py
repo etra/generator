@@ -1,7 +1,7 @@
 from aligator.app import App
 from aligator.config import config
 from aligator.log import log
-
+from aligator.db import db
 import ssl
 
 # Disable certificate verification globally
@@ -16,6 +16,6 @@ import sys
 
 
 if __name__ == '__main__':
-    app = App(config=config, log=log)
+    app = App(config=config, log=log, db=db)
     app.run()
     # app.test()

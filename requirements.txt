@@ -1,2 +1,5 @@
 python-dotenv
 loguru
+Faker
+faker-datasets
+sqlalchemy
