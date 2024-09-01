@@ -3,3 +3,7 @@ loguru
 Faker
 faker-datasets
 sqlalchemy
+
+pandas
+jupyterlab
+matplotlib
